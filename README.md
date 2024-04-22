@@ -43,7 +43,7 @@ The Document Search and Analysis system is designed to assist users in searching
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/your_username/document-search-analysis.git
+git clone https://github.com/MounikaAyyapu1208/AI-Enabled Data Indexing and Search System.git
 cd document-search-analysis
 ```
 
