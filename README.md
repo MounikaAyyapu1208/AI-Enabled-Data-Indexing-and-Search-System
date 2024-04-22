@@ -44,7 +44,7 @@ The Document Search and Analysis system is designed to assist users in searching
 
 ```bash
 git clone https://github.com/MounikaAyyapu1208/AI-Enabled Data Indexing and Search System.git
-cd document-search-analysis
+cd AI-Enabled Data Indexing and Search System
 ```
 
 2. Install dependencies using pip:
