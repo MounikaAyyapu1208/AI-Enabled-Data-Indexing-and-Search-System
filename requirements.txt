@@ -1,0 +1,55 @@
+Preprocessing
+collections
+faiss
+flask
+gensim.models
+json
+logging
+multiprocessing
+nltk
+nltk.corpus
+nltk.metrics.distance
+numpy
+os
+pickle
+requests
+scrapy
+scrapy.crawler
+scrapy.exceptions
+scrapy.item
+scrapy.linkextractors
+scrapy.utils.log
+settings
+sklearn.feature_extraction.text
+
+
+
+#!/bin/bash
+
+# Activate your conda environment
+# conda activate your_env_name
+
+# Update conda
+conda update -n base -c defaults conda
+
+# Install packages with conda where available
+conda install -c anaconda numpy
+conda install -c anaconda nltk
+conda install -c anaconda flask
+conda install -c anaconda requests
+conda install -c anaconda scrapy
+conda install -c conda-forge sklearn
+conda install -c pytorch faiss-cpu  # or faiss-gpu if GPU support is needed
+
+# Install Gensim separately if not found in conda repos
+pip install gensim
+
+# The following additional packages need to be installed with pip
+pip install scrapy-crawler scrapy-exceptions scrapy-item scrapy-linkextractors scrapy-utils-log
+
+# Since some modules do not need to be installed (e.g., os, logging), they are not included in the install script.
+
+# Additionally, some specified packages are part of larger libraries and not installable separately.
+# You may need to ensure the main libraries (like `nltk` and `scrapy`) are properly installed and configured.
+
+echo "Installation complete!"
